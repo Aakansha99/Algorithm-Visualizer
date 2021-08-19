@@ -50,6 +50,6 @@ app.get("/nqueen",(req,res)=>{
     });
 })
 
-app.listen(8000, ()=>{
+app.listen(process.env.PORT || 8000, ()=>{
     console.log("listening the port at 8000");
 })
